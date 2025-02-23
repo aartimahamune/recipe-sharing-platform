@@ -1,0 +1,92 @@
+
+/* About Page Wrapper */
+.about-wrapper {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5ebe0; /* Light brown background */
+    color: #4b2e1e; /* Dark brown text */
+    max-width: 850px;
+    margin: 50px auto;
+    background: #fff8f0; /* Soft beige background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(75, 46, 30, 0.2);
+}
+
+/* Headings */
+.about-title {
+    font-size: 2.5rem;
+    color: #8b5e3b; /* Rich brown */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-subheading {
+    font-size: 1.8rem;
+    color: #a97142; /* Warm brown */
+    margin-top: 20px;
+}
+
+/* Paragraph Styling */
+.about-description,
+.about-vision,
+.about-closing {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* List Styling */
+.about-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-list-item {
+    background: #d2b48c; /* Tan color */
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #3b2b1a; /* Dark brown */
+}
+
+.about-list-item strong {
+    color: #5c3b1e; /* Deep brown */
+}
+
+/* Closing Text */
+.about-closing {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #7c4a2d; /* Chocolate brown */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .about-wrapper {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-subheading {
+        font-size: 1.5rem;
+    }
+
+    .about-description,
+    .about-vision,
+    .about-closing {
+        font-size: 1rem;
+    }
+
+    .about-list-item {
+        font-size: 0.95rem;
+    }
+}

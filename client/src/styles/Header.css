@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-2 {
+    font-size: 1.2rem;
+    color: black;
+    margin: 0.5rem;
+    color: #6925fc;
+}
+
+.logo-1 {
+    background: linear-gradient(to right, rgb(95, 75, 32), #bf8836, #c6aa21);
+    border: none;
+    color: white;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.4rem;
+    font-size: 1.2rem;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li {
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.nav-links ul li:hover {
+    color: rgb(107, 83, 6);
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 820px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links ul li {
+        padding: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .search-box {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .logo-1 {
+        font-size: 1rem;
+        padding: 0.3rem 0.5rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .logo-1 {
+        font-size: 0.9rem;
+    }
+}
