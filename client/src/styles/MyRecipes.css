@@ -1,0 +1,99 @@
+.my-recipes-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+  }
+  
+  .my-recipes-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: rgb(84, 59, 39); /* Brown Theme */
+  }
+  
+  .recipes-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .recipes-table th,
+  .recipes-table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: center;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+
+  .recipes-table th {
+    background-color: rgb(84, 59, 39);
+    color: white;
+    font-weight: 600;
+  }
+  
+  .recipes-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .recipes-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .update-btn,
+  .delete-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    color: white;
+    width: 100px; /* Fixed width for both buttons */
+    text-align: center;
+  }
+  
+  .update-btn {
+    background-color: rgb(84, 59, 39); /* Brown Theme */
+  }
+  
+  .delete-btn {
+    background-color: #d9534f; /* Red for delete */
+  }
+  
+  .update-btn:hover {
+    opacity: 0.8;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c9302c;
+  }
+
+  .loading{
+    font-size: large;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .recipes-table th,
+    .recipes-table td {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+  
+    .update-btn,
+    .delete-btn {
+      padding: 0.4rem 0.75rem;
+      font-size: 0.85rem;
+      width: 90px; /* Slightly smaller width for mobile */
+    }
+  }
+  

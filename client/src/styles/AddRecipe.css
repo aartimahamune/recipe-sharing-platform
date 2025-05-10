@@ -1,0 +1,166 @@
+.recipe-form-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+
+.recipe-form-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.recipe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.recipe-form label {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.recipe-form input[type="text"],
+.recipe-form textarea,
+.recipe-form select {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.recipe-form input[type="text"]:focus,
+.recipe-form textarea:focus,
+.recipe-form select:focus {
+  border-color: #4caf50;
+}
+
+.recipe-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.image-upload {
+  display: flex;
+  gap: 1rem;
+  /* Removed align-items: center */
+}
+
+.image-upload input[type="file"] {
+  flex: 1; /* Take full width like other inputs */
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.upload-btn {
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #4caf50;
+  background-color: white;
+  color: #4caf50;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.upload-btn:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.upload-success {
+  color: green;
+  font-weight: 500;
+}
+
+.submit-btn {
+  padding: 0.75rem 1.25rem;
+  background-color: rgb(84, 59, 39);
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.submit-btn:disabled {
+  opacity: 0.9;
+  cursor: not-allowed;
+}
+
+.submit-btn:hover:enabled {
+  opacity: 0.8;
+}
+
+.upload-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.current-image {
+  margin-top: 1rem;
+}
+
+.current-image img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+
+/* ---------------------- Responsive Design ---------------------- */
+
+@media (max-width: 768px) {
+  .recipe-form-container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .recipe-form-container h2 {
+    font-size: 1.75rem;
+  }
+
+  .upload-btn,
+  .submit-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .image-upload {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .image-upload input[type="file"] {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .recipe-form-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .recipe-form input[type="text"],
+  .recipe-form textarea,
+  .recipe-form select,
+  .upload-btn,
+  .submit-btn {
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .recipe-form textarea {
+    min-height: 80px;
+  }
+}

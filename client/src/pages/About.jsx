@@ -1,32 +1,34 @@
-import React from 'react'
-import '../styles/About.css'
+import React from 'react';
+import '../styles/About.css';
 
-export default function About() {
+const About = () => {
   return (
-    <section class="about-wrapper">
-        <div class="about-content">
-            <h1 class="about-title">Welcome to FlavorAtlas</h1>
-            <p class="about-description">
-                FlavorAtlas is a vibrant community of food lovers where everyone can share their unique and delicious recipes.
-                Whether you're a professional chef or a home cook, our platform is designed to bring together creativity and passion for cooking.
-            </p>
+    <div className="about-container">
+      <div className="about-content">
+        <h1 className="about-title">About Flavor<span>Atlas</span></h1>
+        <p className="about-description">
+          Welcome to <strong>FlavorAtlas</strong>, your ultimate destination for discovering, sharing, and enjoying recipes from around the world! 
+          Our platform is built for food enthusiasts, home chefs, and anyone with a passion for cooking.
+        </p>
+        <p className="about-mission">
+          <strong>Our Mission:</strong> To connect people through the love of food, making it easy to find, create, and share delightful recipes.
+          Whether you’re a beginner or a seasoned cook, FlavorAtlas offers something special for everyone.
+        </p>
+        <p className="about-features">
+          On FlavorAtlas, you can:
+          <ul>
+            <li>📖 Explore a variety of recipes categorized by cuisine, diet preferences, and meal types.</li>
+            <li>✍️ Share your own unique recipes and inspire others.</li>
+            <li>🔍 Search and filter recipes based on your preferences.</li>
+            <li>❤️ Like, comment, and interact with other food lovers.</li>
+          </ul>
+        </p>
+        <p className="about-join">
+          Join our community today and start your flavorful journey with us!
+        </p>
+      </div>
+    </div>
+  );
+};
 
-            <h2 class="about-subheading">Why Choose FlavorAtlas?</h2>
-            <ul class="about-list">
-                <li class="about-list-item"><strong>📖 Share & Discover:</strong> Post your recipes and explore a variety of global cuisines.</li>
-                <li class="about-list-item"><strong>👨‍🍳 Learn from Others:</strong> Get tips, tricks, and feedback from fellow food enthusiasts.</li>
-                <li class="about-list-item"><strong>🍽️ Community & Culture:</strong> Connect with people who share your love for food.</li>
-            </ul>
-
-            <p class="about-vision">
-                Our vision is to create a digital space where food brings people together. Whether you're experimenting with flavors
-                or sharing a family secret recipe, FlavorAtlas is here to celebrate your love for cooking.
-            </p>
-
-            <p class="about-closing">
-                Join us today and become part of the ultimate recipe-sharing experience! 🍜✨
-            </p>
-        </div>
-    </section>
-  )
-}
+export default About;

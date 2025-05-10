@@ -1,0 +1,115 @@
+.recipe-comment-container {
+  display: flex;
+  padding: 16px;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  align-items: flex-start;
+}
+
+.recipe-comment-avatar {
+  margin-right: 12px;
+}
+
+.recipe-comment-avatar-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+}
+
+.recipe-comment-content {
+  flex: 1;
+}
+
+.recipe-comment-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.recipe-comment-username {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.recipe-comment-time {
+  color: #888;
+  font-size: 12px;
+}
+
+.recipe-comment-text {
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.recipe-comment-actions {
+  display: flex;
+  gap: 8px;
+  border-top: 1px solid #eee;
+  padding-top: 8px;
+}
+
+.recipe-comment-actions button {
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.recipe-comment-actions button:hover .recipe-thumb-icon,
+.recipe-comment-actions button:hover .like-text {
+  color: #007bff;
+}
+
+.recipe-comment-actions button .like-count {
+  color: #888;
+}
+
+.recipe-comment-actions button.liked .recipe-thumb-icon,
+.recipe-comment-actions button.liked .like-text {
+  color: #007bff;
+}
+
+.recipe-thumb-icon {
+  margin-right: 4px;
+  transition: color 0.3s;
+}
+
+.recipe-comment-textarea {
+  width: 100%;
+  height: 60px;
+  resize: none;
+  margin-bottom: 8px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.recipe-comment-edit-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.recipe-save-btn,
+.recipe-cancel-btn {
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.recipe-save-btn {
+  background-color: #6a5acd;
+  color: white;
+}
+
+.recipe-cancel-btn {
+  background-color: transparent;
+  color: #6a5acd;
+  border: 1px solid #6a5acd;
+}

@@ -48,7 +48,7 @@
     border: 1px solid rgb(165, 160, 160);
     padding: 5px;
     width: 290px;
-    border-radius: 50px;
+    border-radius: 0.5rem;
     margin: 0.2rem;
     caret-color: rgb(165, 160, 160);
 }
@@ -57,10 +57,9 @@
     margin: 0.7rem;
 }
 .frm button {
-    /* border: 1px solid rgb(66, 64, 64); */
-    background-color: #c69d55;
+    background-color: rgb(178, 131, 93);
     color: black;
-    border-radius: 50px;
+    border-radius: 0.5rem;
     padding: 5px;
     width: 290px;
     margin: 0.8rem;
@@ -69,7 +68,7 @@
 }
 
 .frm button:hover {
-    background-color: #a38a5e !important ;
+    background-color: rgb(155, 111, 76) !important ;
     color: black !important ;
     outline: none !important ;
 }
@@ -122,6 +121,17 @@
     }
   }
 
+  .error-message {
+    color: red;
+    font-size: small;
+    background-color: #ffe6e6;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid red;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
 @media screen and (max-width : 992px) {
     .box-2 {
         display: none;
